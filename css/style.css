@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px; /* Limitar ancho de las cards en pantallas grandes */
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    width: 50%;
+}
+
+.table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.table td {
+    font-size: 1.2em;
+}
+
+/* Estilo para los precios */
+.precio {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #030303;
+}
+
+/* Media query para pantallas más pequeñas (tabletas y teléfonos) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    /* Ajustar tamaño de los precios en pantallas pequeñas */
+    .precio {
+        font-size: 1.5em;
+    }
+}
+
+#titulos {
+    text-align: center;
+    background-color: #6DFC7D;
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-size: 2rem;
+}
